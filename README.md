@@ -1,6 +1,5 @@
 # Case_Suzano
 
-Descrição do Projeto
 Este script em Python tem como objetivo classificar indicadores ambientais presentes em uma planilha Excel, adicionando uma nova coluna de classificação ("Água", "Energia" ou "Outros") baseada em uma API do Google chamada Gemini. Além disso, ele mantém a formatação da planilha original, criando a nova coluna "Classificação" com o mesmo estilo e características das outras colunas existentes. O código utiliza a biblioteca openpyxl para manipulação da planilha e a google.generativeai para acessar a API de IA.
 
 Funcionalidades
