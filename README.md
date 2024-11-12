@@ -2,7 +2,7 @@
 
 # Classificação de Indicadores Ambientais
 
-Este projeto em Python automatiza a classificação de indicadores ambientais em uma planilha Excel. Ele usa a **API de inteligência generativa do Google** para categorizar cada indicador e adiciona uma nova coluna de classificação na planilha original, mantendo a formatação das colunas existentes.
+Este projeto em Python automatiza a classificação de indicadores ambientais em uma planilha Excel. Ele usa a **API GEMINI do Google** para categorizar cada indicador e adiciona uma nova coluna de classificação na planilha original, mantendo a formatação das colunas existentes.
 
 ## Funcionalidades
 
