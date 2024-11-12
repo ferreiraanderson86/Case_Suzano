@@ -32,10 +32,3 @@ Este projeto em Python automatiza a classificação de indicadores ambientais em
 
 4. **Salvamento da Planilha Modificada:**  
    O arquivo Excel é salvo no caminho especificado.
-
-## Como Usar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
