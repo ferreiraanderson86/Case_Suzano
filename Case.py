@@ -3,7 +3,7 @@ import pandas as pd
 import google.generativeai as genai
 from openpyxl.styles import PatternFill, Font, Alignment, Border, Side
 
-genai.configure(api_key="AIzaSyD1q-lK71QDHpDnbEe_1zVVa9B45Tjp4-E")
+genai.configure(api_key="Inserir_API_KEY")
 
 model = genai.GenerativeModel('gemini-1.5-pro')
 
