@@ -1,32 +1,41 @@
 # Case_Suzano
 
-Este script em Python tem como objetivo classificar indicadores ambientais presentes em uma planilha Excel, adicionando uma nova coluna de classificação ("Água", "Energia" ou "Outros") baseada em uma API do Google chamada Gemini. Além disso, ele mantém a formatação da planilha original, criando a nova coluna "Classificação" com o mesmo estilo e características das outras colunas existentes. O código utiliza a biblioteca openpyxl para manipulação da planilha e a google.generativeai para acessar a API de IA.
+# Classificação de Indicadores Ambientais
 
-Funcionalidades
-Carregar a Planilha Original: O script carrega a planilha Excel existente que contém os dados dos indicadores.
+Este projeto em Python automatiza a classificação de indicadores ambientais em uma planilha Excel. Ele usa a **API de inteligência generativa do Google** para categorizar cada indicador e adiciona uma nova coluna de classificação na planilha original, mantendo a formatação das colunas existentes.
 
-Classificação dos Indicadores: Para cada indicador na planilha, o script envia uma solicitação à API de IA para classificar o indicador como "Água", "Energia" ou "Outros". Caso a classificação não seja válida ou haja um erro, o script registra a mensagem de erro.
+## Funcionalidades
 
-Adição de Coluna de Classificação: O script cria uma nova coluna "Classificação" na planilha original, mantendo o cabeçalho e a formatação da planilha.
+- **Classificação Automática dos Indicadores:**  
+  Cada indicador na planilha é classificado pela API como "Água", "Energia" ou "Outros".
 
-Formatação de Células: A nova coluna "Classificação" recebe formatação consistente com as outras colunas da planilha:
-O cabeçalho é preenchido com a cor preta e a fonte é configurada para branca.
-A coluna é centralizada.
-A largura da coluna é ajustada para 35,11.
-As bordas da célula do cabeçalho são configuradas com a cor #CCCCCC (cinza claro).
+- **Manutenção da Formatação da Planilha:**  
+  A nova coluna "Classificação" é adicionada com o cabeçalho formatado com **fundo preto**, **fonte branca**, **centralização**, **borda cinza** e **largura da coluna ajustada** para 35,11, de modo a manter a consistência visual com as demais colunas.
 
-Bibliotecas Utilizadas
+## Tecnologias Utilizadas
 
-openpyxl: Biblioteca utilizada para manipulação de planilhas Excel no formato .xlsx.
+- **Python**
+- **openpyxl** para manipulação de planilhas Excel.
+- **google-generativeai** para acesso à API de classificação.
+- **pandas** para leitura inicial da planilha.
 
-google.generativeai: API de inteligência generativa do Google utilizada para classificar os indicadores.
+## Estrutura do Código
 
-Como Funciona
+1. **Leitura e Carregamento da Planilha Original:**  
+   O código carrega a planilha Excel com os indicadores ambientais.
 
-Leitura da Planilha: O script começa lendo a planilha Excel original com a ajuda da biblioteca pandas, carregando as informações necessárias.
+2. **Classificação dos Indicadores:**  
+   Para cada indicador, é feita uma requisição à API para classificá-lo. Se a resposta for inválida ou houver erro, a classificação padrão é "Erro".
 
-Interação com a API do Google: Para cada indicador presente na coluna "Nome do Indicador", uma solicitação é enviada à API do Google para classificá-lo. A classificação pode ser "Água", "Energia" ou "Outros".
+3. **Adição e Formatação da Nova Coluna:**  
+   A coluna "Classificação" é adicionada com o cabeçalho e as configurações de estilo.
 
-Criação da Nova Coluna: Uma nova coluna "Classificação" é criada ao lado da coluna "Nome do Indicador". O cabeçalho da nova coluna é formatado com a cor preta e fonte branca, as bordas das células são aplicadas e a largura da coluna é ajustada.
+4. **Salvamento da Planilha Modificada:**  
+   O arquivo Excel é salvo no caminho especificado.
 
-Salvamento da Planilha Modificada: O script salva a planilha original com a nova coluna "Classificação" e formatação, garantindo que todas as alterações sejam preservadas.
+## Como Usar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
